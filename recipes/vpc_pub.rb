@@ -13,11 +13,11 @@ with_driver 'aws::#{node[:aws_vpc][:region]}'
   end
 
 
-node[:aws_vpc][:public_subnet].each do |name,cidr_block|  
+node[:aws_vpc][:public_subnet].each do |name,cidr|  
    puts("Inside the loop")
    aws_subnet name do
    vpc node[:aws_vpc][:vpc]
-   cidr_block cidr_block
+   cidr_block cidr
    availability_zone node[:aws_vpc][:region]
    map_public_ip_on_launch true
   end
