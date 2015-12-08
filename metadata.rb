@@ -1,0 +1,7 @@
+name             'aws_vpc'
+maintainer       'YOUR_NAME'
+maintainer_email 'YOUR_EMAIL'
+license          'All rights reserved'
+description      'Installs/Configures aws_vpc'
+long_description 'Installs/Configures aws_vpc'
+version          '0.1.0'
