@@ -6,3 +6,4 @@
 #
 # All rights reserved - Do Not Redistribute
 #
+include_recipe 'aws_vpc::vpc_pub'
